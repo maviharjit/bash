@@ -27,5 +27,10 @@ function nocomments () {
 	cat $1 | grep -v \# | sed '/^$/ d'
 }
 
+
 ## my aliases
+# make sure latest docker-compose is executed
 alias docker-compose="/usr/local/bin/docker-compose"
+
+# remount home so VPN client can work with ecryptfs
+alias mountforpia="sudo mount -o remount,exec,suid -i ~"
