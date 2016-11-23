@@ -43,3 +43,8 @@ alias rm-all-docker-images="sudo docker rmi -f $(sudo docker images -q)"
 alias rm-docker-containers="sudo docker rm $(sudo docker ps -a -q)"
 alias rm-all-docker-containers="sudo docker rm -f $(sudo docker ps -a -q)"
 
+# log into vps
+alias vps="ssh user@myvps.com"
+
+# tunnel IRC port thru ssh
+alias vpst="ssh -fN -L 6667:localhost:6667 user@myvps.com"
