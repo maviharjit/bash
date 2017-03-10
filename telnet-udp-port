@@ -1,0 +1,6 @@
+#!/bin/bash
+# credit http://serverfault.com/questions/193425/verify-connectivity-to-a-server-on-a-udp-port
+host="10.10.10.10"
+port=12345
+echo "PING" >/dev/udp/$host/$port
+
