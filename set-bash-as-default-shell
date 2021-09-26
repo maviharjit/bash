@@ -1,0 +1,2 @@
+edit /etc/passwd - see sample below
+lagertha:x:1003:1003::/home/lagertha:/bin/bash
